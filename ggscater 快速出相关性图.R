@@ -29,7 +29,8 @@ ggscatter(dtest, x = "chin the third-time measurement", y = "chin the sum of the
           add.params = list(fill = "lightgray")
           
 )+
-  stat_cor(method = "pearson",  
+  stat_cor(method = "pearson", 
+           aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")),
            r.accuracy = 0.001,
            p.accuracy = 0.001,
            label.x.npc = 0.5,
